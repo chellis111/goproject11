@@ -1,0 +1,30 @@
+ALGORITHM Algorithm_Sentence
+    let length_count = 0;
+    let word_count = 1;
+    let vowel_count = 0;
+    vowel = ["a", "e", "i", "o", "u", "A" , "E", "I", "O", "U"]
+
+BEGIN
+    // Increament for each character
+    length_count = length_count++
+    
+    // increament of word seperated by space
+    IF (char = " ") THEN
+        word_count = word_count++
+    END_IF
+    
+    // increament if character is a vowel
+    IF (char = vowel) THEN
+        vowel_count = vowel_count++
+    END_IF
+    
+    // the last character is the point
+    IF (char = ".") THEN
+        length_count = length_count - 1
+    END_IF
+
+    // OUTPUT OF RESULT
+    output "lenght_count: ", lenght_count
+    output "word_count: ", word_count
+    output "vowel_count: ", vowel_count
+END
