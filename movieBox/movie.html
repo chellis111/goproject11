@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/stylesheets/style.css"/>
+</head>
+<body>
+    <!-- header section -->
+     <header class="fixed-Top">
+        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+     </header>
+
+    <main>
+       <!-- corusel section -->
+            
+         <section class="carusel-container">
+            <swiper-container 
+              slides-per-view="1" 
+              speep="500"
+              loop="true"
+              css-mode="true"
+              navigation="true"
+              pagination="true"
+              scrollbar="true"
+              autoplay="true"
+              display="2500"
+              class="container-fluid swiper-container">
+
+                <swiper-slide>
+                    <div class="over-lay">
+                        <div class="desc">
+                            <h1>Hello Movie</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore rem laudantium sit laboriosam, adipisci magni hic aliquam, voluptates perspiciatis iure autem at placeat facilis illum, excepturi fuga voluptatum beatae?</p>
+                            <a href="" class="Explore-btn btn btn-warning">Explore More</a>
+                        </div>
+                    </div>
+
+                    <img src="lib/images/cook-aynne-iUR1sHar6Fs-unsplash.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="over-lay">
+                        <div class="desc">
+                            <h1>Hello Movie</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore rem laudantium sit laboriosam,
+                                adipisci magni hic aliquam, voluptates perspiciatis iure autem at placeat facilis illum, excepturi fuga
+                                voluptatum beatae?</p>
+                            <a href="" class="Explore-btn btn btn-warning">Explore More</a>
+                        </div>
+                    </div>
+                    
+                    <img src="lib/images/erik-mclean-NzpMaCedoyw-unsplash.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="over-lay">
+                        <div class="desc">
+                            <h1>Hello Movie</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore rem laudantium sit laboriosam,
+                                adipisci magni hic aliquam, voluptates perspiciatis iure autem at placeat facilis illum, excepturi fuga
+                                voluptatum beatae?</p>
+                            <a href="" class="Explore-btn btn btn-warning">Explore More</a>
+                        </div>
+                    </div>
+                    
+                    <img src="lib/images/krists-luhaers-AtPWnYNDJnM-unsplash.jpg" alt="">
+                </swiper-slide>
+            </swiper-container>
+         </section>
+
+         <!-- Movie section -->
+          <section class="container-fluid" style="margin-top: 50px;">
+                <h1 class="text-center my-5">Latest Movies</h1>
+                
+                <h3 id="error-message"></h3>
+                <div class="row" id="movie-data">
+                  <!-- Movie-data is rendered here -->
+            </div>
+          </section>
+         
+    </main>   
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="lib/js/movie.js"></script>
+</body>
+</body>
+</html>
