@@ -1,9 +1,10 @@
-// Description.js
-import React from "react";
+import React, { Component } from "react";
 import product from "./ProductCard";
 
-const Description = () => {
-  return <p>{product.description}</p>;
-};
+class Description extends Component {
+  render() {
+    return <p>{product.description}</p>;
+  }
+}
 
 export default Description;

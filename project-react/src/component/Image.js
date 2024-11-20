@@ -1,9 +1,11 @@
 // Image.js
-import React from "react";
+import React, { Component } from "react";
 import product from "./ProductCard";
 
-const Image = () => {
-  return <img src={product.imageUrl} alt={product.name} />;
-};
+class Image extends Component {
+  render() {
+    return <img src={product.imageUrl} alt={product.name} />;
+  }
+}
 
 export default Image;
